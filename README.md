@@ -1,5 +1,10 @@
 # vuedemo
 
+学习VUE的DEMO
+
+用VUE的脚手架VUE-CLI 搭建 使用webpack打包
+
+
 > A Vue.js project
 
 ## Build Setup

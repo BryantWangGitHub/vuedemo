@@ -1,18 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <el-menu router mode="horizontal" >
+      <el-menu-item index="/home">Home</el-menu-item>
+      <el-submenu index="2">
+        <template slot="title">DEMO</template>
+        <el-menu-item index="/vueresouce">vueresouce</el-menu-item>
+        <el-menu-item index="2-2">选项2</el-menu-item>
+        <el-menu-item index="2-3">选项3</el-menu-item>
+      </el-submenu>
+    </el-menu>
+    <div>
+      <transition>
+        <router-view></router-view>
+      </transition>
+    </div>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Element from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 
 export default {
-  name: 'app',
-  components: {
-    Hello
-  }
+  name: 'app'
 }
 </script>
 
